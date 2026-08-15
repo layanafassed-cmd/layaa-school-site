@@ -1,0 +1,153 @@
+/* The whole website */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fff7fb;
+    color: #d189d1;
+}
+
+
+/* Header */
+
+header {
+    background-color: white;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #d79db6;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #443b44;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d99ab5;
+}
+
+
+/* Sections */
+
+section {
+    max-width: 800px;
+    margin: auto;
+    padding: 70px 25px;
+}
+
+
+/* Home */
+
+#home {
+    text-align: center;
+    background-color: #fcecf4;
+}
+
+#home h1 {
+    font-size: 50px;
+    color: #d99ab5;
+}
+
+
+/* Link button */
+
+#home a {
+    display: inline-block;
+    background-color: #d99ab5;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-decoration: none;
+}
+
+
+/* Subjects */
+
+#subjects {
+    background-color: #f5effa;
+}
+
+
+/* Activities */
+
+#activities {
+    background-color: #fff0f6;
+}
+
+
+/* Contact form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 450px;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    width: 100px;
+    padding: 10px;
+
+    border: none;
+    border-radius: 20px;
+
+    background-color: #d99ab5;
+    color: white;
+
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #fcecf4;
+}
+
+
+/* Make the website work on phones */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 40px;
+    }
+}
